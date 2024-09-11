@@ -26,6 +26,7 @@ const Test = ({ user }) => {
       date: new Date().toISOString(),
       visibility: true,
     };
+    console.log("user=>", user);
     await createTestResult(resultData);
     navigate("/results");
   };

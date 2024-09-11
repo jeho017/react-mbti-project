@@ -66,7 +66,7 @@ export const updateProfile = async (formData) => {
   return response.data;
 };
 
-// 로그아웃 함수: 토큰 제거
+// 로그아웃 함수(토큰 제거)
 export const logout = () => {
   localStorage.removeItem("token");
 };

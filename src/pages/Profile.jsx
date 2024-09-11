@@ -12,7 +12,6 @@ const ProfilePage = ({ user }) => {
         if (!user) {
           return;
         }
-        // 사용자 정보가 없으면 로그인 페이지로 리다이렉트
         const profile = await getUserProfile();
         setNickname(profile.nickname || "");
         // setIsLogin(true);
@@ -41,7 +40,7 @@ const ProfilePage = ({ user }) => {
   };
 
   if (!user) {
-    return <div>로그인 해주세요.</div>; // 적절한 메시지 또는 리다이렉트 처리
+    return <div>로그인 해주세요.</div>;
   }
 
   return (
